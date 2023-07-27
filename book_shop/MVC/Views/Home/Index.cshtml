@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ProductDto>
+
+<form>
+    <div class="container row">
+        @foreach (var product in Model)
+        {
+            <div class=" bs col-12 col-md-6 col-lg-4">
+                <div class="bs p-0 my-3 border rounded">
+                    <div class="bs card">
+                        <h3 class=" bs card-title text-dark-50 text-center py-2">@product.Title</h3>
+                        <img src="@product.ImageUrl" class=" bs card-img-top rounded" />
+                        <div class="bs card-body">
+                            <div class=" bs d-flex justify-content-between py-2">
+                                <span class=" text-bg-light" style="font-size:20px;">@product.Price грн</span>
+                                <span class="badge bg-primary text-light p-2">@product.CategoryName</span>
+                            </div>
+                            <p class="bs card-text">@product.Description</p>
+                            <div class="row">
+                                <div class="col">
+                                    <a asp-action="ProductDetails" asp-route-id="@product.Id" class="btn btn-primary form-control">
+                                        Детальніше
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</form>
