@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/book_shop/.vs
+/book_shop/Basket.Host/bin/Debug/net7.0
+/book_shop/Catalog/bin/Debug/net7.0
+/book_shop/IdentityServer/bin/Debug/net7.0
+/book_shop/MVC/bin/Debug/net7.0
+/book_shop/Order.Host/bin/Debug/net7.0
+/book_shop/Order.Tests/bin/Debug/net7.0
+/book_shop/Order.Tests/obj
+/book_shop/Order.Host/obj
+/book_shop/MVC/obj
+/book_shop/IdentityServer/obj
+/book_shop/Catalog/obj
+/book_shop/Basket.Tests/bin/Debug/net7.0
+/book_shop/Basket.Tests/obj
+/book_shop/Basket.Host/obj
